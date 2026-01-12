@@ -1,11 +1,11 @@
 KEYMAPOPTS="us us"
-HOSTNAMEOPTS="-n alpine"
+HOSTNAMEOPTS="-n zsf"
 INTERFACESOPTS="auto lo
 iface lo inet loopback
 
 auto eth0
 iface eth0 inet dhcp
-    hostname alpine
+    hostname zsf
 "
 TIMEZONEOPTS="-z UTC"
 PROXYOPTS="none"
