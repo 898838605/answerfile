@@ -3,7 +3,7 @@ qemu-system-x86_64 -machine q35 -m 2048 -smp cpus=2 -cpu qemu64 \
 -netdev user,id=n1,hostfwd=tcp::2222-:22 \
 -device virtio-net,netdev=n1 \
 -cdrom alpine-virt-3.12.3-x86_64.iso \
--drive file=alpine.img,if=virtio
+-drive file=alpine.img,if=virtio \
 -nographic
 #qemu-system-x86_64启动虚拟机，参数为：
 #-machine q35：设定机型
